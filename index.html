@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Website title</title>
+    <script src="carousel.js"></script>
+    <link rel="stylesheet" href="carousel.css" />
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -10,6 +12,7 @@
       <div id="header" class="header">
         <div class="headerIcon">
           <img
+            onclick="redirect(0)"
             width="100%"
             height="100%"
             class="icon"
@@ -18,6 +21,7 @@
             alt="IPL Logo"
           />
           <img
+            onclick="redirect(1)"
             width="100%"
             height="100%"
             class="icon"
@@ -33,6 +37,7 @@
 
         <div class="headerIcon">
           <img
+            onclick="redirect(2)"
             width="100%"
             height="100%"
             class="icon"
@@ -41,6 +46,7 @@
             alt="IPL Logo"
           />
           <img
+            onclick="redirect(3)"
             width="100%"
             height="100%"
             class="icon"
@@ -52,9 +58,17 @@
       </div>
 
       <div class="instructions" id="instructions">
-        <marquee class = "scrollingText" behaviour="scroll" direction="right"
-          >Scrolling Instructions</marquee
+        <marquee class="scrollingText" behaviour="scroll" direction="left"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+          aliquam necessitatibus possimus quisquam eaque consectetur, eum
+          commodi, perferendis corrupti dignissimos autem maxime deserunt
+          explicabo iste atque pariatur nobis minima. Perspiciatis!</marquee
         >
+      </div>
+
+      <div class="carousel" id="carousel">
+        <img id="carouselImage" class="carouselImage" />
+        <text id="carouselText" class="carouselText"></text>
       </div>
 
       <div class="newsContainer" id="newsContainer">
@@ -62,13 +76,28 @@
           <center><h2>News header</h2></center>
           <center><text class="newsText">News content</text></center>
         </div>
-        <div class="news" id="news"></div>
-        <div class="news" id="news"></div>
+        <div class="news" id="news">
+          <center><h2>News header</h2></center>
+          <center><text class="newsText">News content</text></center>
+        </div>
+        <div class="news" id="news">
+          <center><h2>News header</h2></center>
+          <center><text class="newsText">News content</text></center>
+        </div>
       </div>
       <div class="newsContainer" id="newsContainer">
-        <div class="news" id="news"></div>
-        <div class="news" id="news"></div>
-        <div class="news" id="news"></div>
+        <div class="news" id="news">
+          <center><h2>News header</h2></center>
+          <center><text class="newsText">News content</text></center>
+        </div>
+        <div class="news" id="news">
+          <center><h2>News header</h2></center>
+          <center><text class="newsText">News content</text></center>
+        </div>
+        <div class="news" id="news">
+          <center><h2>News header</h2></center>
+          <center><text class="newsText">News content</text></center>
+        </div>
       </div>
     </div>
   </body>
